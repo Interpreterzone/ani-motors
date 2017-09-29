@@ -78,5 +78,11 @@ To run application, use the `serve` command:
     
     php artisan serve
     
+## Failed to open stream ISSUE
+
+You must run command `composer install` before `php artisan serve`
+
+
+    
     
 ## God Luck Team :-)
