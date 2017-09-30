@@ -26,9 +26,12 @@ It is often helpful to have different configuration values based on the environm
 
 ## Easier Way!!!
 Just run the following command after cloning the repo.
+
 `bash setup.sh`
 
 Note: You must have already installed bash/gitbash in you OS.
+
+## Step by step
 
 ### Install
 The `install` command reads the `composer.json` file from the current directory, resolves the dependencies, and installs them into `vendor`.
