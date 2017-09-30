@@ -26,7 +26,7 @@ It is often helpful to have different configuration values based on the environm
 
 ## Easier Way, Configure in one command!!!
 
-##Note:(Make sure on windows Run this from <a href="https://git-for-windows.github.io/">git bash</a>)
+## Note:(Make sure on windows Run this from <a href="https://git-for-windows.github.io/">git bash</a>)
 
 Just run the following command after cloning the repo.
 
