@@ -25,7 +25,9 @@ This is the Ani Motors module of education system. We are want to improve the qu
 It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different cache driver locally than you do on your production server.
 
 ## Easier Way, Configure in one command!!!
+
 ##Note:(Make sure on windows Run this from <a href="https://git-for-windows.github.io/">git bash</a>)
+
 Just run the following command after cloning the repo.
 
     bash -x iamlazy.sh
