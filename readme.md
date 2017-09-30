@@ -15,6 +15,7 @@
 * [Run autoload](#run-autoload-class-loader)
 * [Testing Data Run Seeder](#testing-data-run-seeder)
 * [Run Application](#run-application)
+* [Issue during setup](https://github.com/fsdevelopers/ani-motors/blob/master/issue_tracker.md)
 
 
 ## Introduction
