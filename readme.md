@@ -30,8 +30,11 @@ The `install` command reads the `composer.json` file from the current directory,
 
 ### Make .env configuration
 You can always generate .env file manually by running:
-    
+##### on mac or Linux  
     cp .env.example .env
+##### on windows
+    
+    copy .env.example .env
     
 ### Generate Application Key
 You can always generate application key by running
@@ -77,12 +80,6 @@ You can insert dummy data in database using this command:
 To run application, use the `serve` command:
     
     php artisan serve
-    
-## Failed to open stream ISSUE
 
-You must run command `composer install` before `php artisan serve`
-
-
-    
     
 ## God Luck Team :-)
