@@ -43,7 +43,7 @@ class setuplocally extends Command
     {
         // run bash setup script
         //$this->exec('ls -al');
-        $process = new Process('bash setup.sh');
+        $process = new Process('bash iamlazy.sh');
         $process->run();
 
         // executes after the command finishes

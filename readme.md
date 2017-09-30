@@ -27,7 +27,7 @@ It is often helpful to have different configuration values based on the environm
 ## Easier Way, Configure in one command!!!
 Just run the following command after cloning the repo.
 
-    bash -x setup.sh
+    bash -x iamlazy.sh
 
 Note: You must have already installed bash/gitbash in you OS.
 
