@@ -30,8 +30,11 @@ The `install` command reads the `composer.json` file from the current directory,
 
 ### Make .env configuration
 You can always generate .env file manually by running:
-    
+##### on mac or Linux  
     cp .env.example .env
+##### on windows
+    
+    copy .env.example .env
     
 ### Generate Application Key
 You can always generate application key by running
