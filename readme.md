@@ -27,7 +27,7 @@ It is often helpful to have different configuration values based on the environm
 ## Easier Way!!!
 Just run the following command after cloning the repo.
 
-`bash setup.sh`
+    bash -x setup.sh
 
 Note: You must have already installed bash/gitbash in you OS.
 
