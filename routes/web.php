@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('client.index');
 });
+
+
+Route::get('/client/register', function () {
+    return view('client.register');
+});
