@@ -24,6 +24,12 @@ This is the Ani Motors module of education system. We are want to improve the qu
 ## Environment Configuration
 It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different cache driver locally than you do on your production server.
 
+## Easier Way!!!
+Just run the following command after cloning the repo.
+`bash setup.sh`
+
+Note: You must have already installed bash/gitbash in you OS.
+
 ### Install
 The `install` command reads the `composer.json` file from the current directory, resolves the dependencies, and installs them into `vendor`.
 
