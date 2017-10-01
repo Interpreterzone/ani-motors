@@ -31,6 +31,7 @@ Just run the following command after cloning the repo.
     bash -x iamlazy.sh
     
 Make sure on windows Run this from [git bash](https://git-for-windows.github.io/git)
+
 Note: You must have already installed [bash](#) or [Gitbash](#) in you OS.
 
 ## Step by step
