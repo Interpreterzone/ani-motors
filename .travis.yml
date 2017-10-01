@@ -1,6 +1,6 @@
 {
 "language": "php",
-  "php": 5.3,
+  "php": 7.0,
   "matrix": {
     "allow_failures": [
       {
