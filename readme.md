@@ -29,7 +29,7 @@ Just run the following command after cloning the repo.
 
     bash -x iamlazy.sh
 
-Note: You must have already installed bash/gitbash in you OS.
+Note: You must have already installed [bash](#) or [Gitbash](#) in you OS.
 
 ## Step by step
 
