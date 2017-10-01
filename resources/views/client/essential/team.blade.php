@@ -10,7 +10,8 @@
                 <div class="col-md-6">
                     <div class="team-info">
                         <div class="img-sec">
-                            <img src="img/agent1.jpg" class="img-responsive">
+                            <img src="{{ URL::asset('client/img/agent1.jpg') }}" class="img-responsive">
+
                         </div>
                         <div class="fig-caption">
                             <h3>Haris Brown</h3>
@@ -28,7 +29,7 @@
                 <div class="col-md-6">
                     <div class="team-info">
                         <div class="img-sec">
-                            <img src="img/agent2.jpg" class="img-responsive">
+                            <img src="{{ URL::asset('client/img/agent2.jpg') }}" class="img-responsive">
                         </div>
                         <div class="fig-caption">
                             <h3>Emmy Brown</h3>
@@ -46,7 +47,7 @@
                 <div class="col-md-6">
                     <div class="team-info">
                         <div class="img-sec">
-                            <img src="img/agent3.jpg" class="img-responsive">
+                            <img src="{{ URL::asset('client/img/agent3.jpg') }}" class="img-responsive">
                         </div>
                         <div class="fig-caption">
                             <h3>Iain Dante</h3>
@@ -64,7 +65,7 @@
                 <div class="col-md-6">
                     <div class="team-info">
                         <div class="img-sec">
-                            <img src="img/agent4.jpg" class="img-responsive">
+                            <img src="{{ URL::asset('client/img/agent4.jpg') }}" class="img-responsive">
                         </div>
                         <div class="fig-caption">
                             <h3>Kate Haris</h3>

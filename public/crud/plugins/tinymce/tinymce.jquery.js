@@ -38987,10 +38987,10 @@ define("tinymce/Editor", [
 		},
 
 		/**
-		 * Uploads all data uri/blob uri images in the editor contents to server.
+		 * Uploads all data uri/blob uri img in the editor contents to server.
 		 *
 		 * @method uploadImages
-		 * @param {function} callback Optional callback with images and status for each image.
+		 * @param {function} callback Optional callback with img and status for each image.
 		 * @return {tinymce.util.Promise} Promise instance.
 		 */
 		uploadImages: function(callback) {
