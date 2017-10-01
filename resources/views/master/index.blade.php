@@ -12,6 +12,14 @@
     @yield('css')
 </head>
 <body>
+
+<!--CUSTOM START-->
+<!-- custom section for adding -->
+
+@yield('custom')
+
+<!--CUSTOM END-->
+
 <!--HEADER START-->
 
 @include('essential.header')
@@ -25,14 +33,10 @@
 <!--BANNER END-->
 
 <!--CTA1 START-->
-<div class="cta-1">
-    <div class="container">
-        <div class="row text-center white">
-            <h1 class="cta-title">Say Hey to Ani Motors!!</h1>
-            <p class="cta-sub-title">Full Responsive HTML5 Bootstrap Template.</p>
-        </div>
-    </div>
-</div>
+
+@include('essential.citation')
+
+
 <!--CTA1 END-->
 
 <!--SERVICE START-->
@@ -55,15 +59,9 @@
 <!--TEAM END-->
 
 <!--CTA2 START-->
-<div class="cta2">
-    <div class="container">
-        <div class="row white text-center">
-            <h3 class="wd75 fnt-24">“Every Thing is designed. Few Things are Designed well.” - Brian Reed</h3>
-            <p class="cta-sub-title"></p>
-            <a href="#" class="btn btn-default">Request A Quote</a>
-        </div>
-    </div>
-</div>
+
+@include('essential.citation')
+
 <!--CTA2 END-->
 
 <!--CONTACT START-->

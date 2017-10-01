@@ -19,6 +19,12 @@ Route::get('/', function () {
 Route::get('/client/register', function () {
     return view('client.register');
 });
+
 Route::get('/master', function () {
     return view('master.index');
+});
+
+
+Route::get('/admin', function () {
+    return view('crud.index');
 });
