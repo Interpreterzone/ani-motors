@@ -1,5 +1,5 @@
 
-[![Snap CI branch](https://img.shields.io/snap-ci/ThoughtWorksStudios/eb_deployer/master.svg)]() [![Scrutinizer](https://img.shields.io/scrutinizer/g/filp/whoops.svg)]()
+[![Travis](https://travis-ci.org/fsdevelopers/ani-motors.svg?branch=master)]
 
 
 # Ani Motors
