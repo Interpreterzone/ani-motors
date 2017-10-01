@@ -595,3 +595,18 @@ p.cta-sub-title {
 /**************************************
 form element
 **************************************/
+
+
+/**************************************
+Custom Styles
+**************************************/
+
+.navbar-default .navbar-nav>li .btn{
+    padding: 13px 48px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+
+

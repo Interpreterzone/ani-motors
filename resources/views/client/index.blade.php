@@ -23,13 +23,14 @@
 			  </button>
 			  <a class="navbar-brand" href="index.html">Ani Motors</a>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-			  <ul class="nav navbar-nav navbar-right">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
 			    <li class="active"><a href="#banner">Home</a></li>
 			    <li><a href="#service">Service</a></li>
 			    <li><a href="#portfolio">Portfolio</a></li>
 			    <li><a href="#about">Our Team</a></li>
 			    <li><a href="#contact">Contact Us</a></li>
+			    <li><a class="btn btn-success" href="{{ URL::to('/client/register') }}">Singup</a></li>
 			  </ul>
 			</div>
 		  </div>
@@ -121,7 +122,7 @@
 					</div>
 					<div id="Container">
 								<div class="filimg mix category-1 category-3 col-md-4 col-sm-4 col-xs-12" data-myorder="2">
-									<img src="img/fea1.jpg" class="img-responsive"> 
+									<img src="img/fea1.jpg" class="img-responsive">
 								</div>
 								<div class="filimg mix category-2 col-md-4 col-sm-4 col-xs-12" data-myorder="4">
 									<img src="img/fea2.jpg" class="img-responsive">
@@ -230,7 +231,7 @@
 		</div>
 	</div>
 	<!--TEAM END-->
-    
+
 	<!--CTA2 START-->
 	<div class="cta2">
 		<div class="container">
