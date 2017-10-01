@@ -22,57 +22,57 @@
 
 <!--HEADER START-->
 
-@include('essential.header')
+@include('client.essential.header')
 
 <!--HEADER END-->
 
 <!--BANNER START-->
 
-@include('essential.banner_top')
+@include('client.essential.banner_top')
 
 <!--BANNER END-->
 
 <!--CTA1 START-->
 
-@include('essential.citation')
+@include('client.essential.citation')
 
 
 <!--CTA1 END-->
 
 <!--SERVICE START-->
 
-@include('essential.service')
+@include('client.essential.service')
 
 
 <!--SERVICE END-->
 
 <!--PORTFOLIO START-->
 
-@include('essential.portfolio')
+@include('client.essential.portfolio')
 
 <!--PORTFOLIO END-->
 
 <!--TEAM START-->
 
-@include('essential.team')
+@include('client.essential.team')
 
 <!--TEAM END-->
 
 <!--CTA2 START-->
 
-@include('essential.citation')
+@include('client.essential.citation')
 
 <!--CTA2 END-->
 
 <!--CONTACT START-->
 
-@include('essential.contact')
+@include('client.essential.contact')
 
 <!--CONTACT END-->
 
 <!--FOOTER START-->
 
-@include('essential.footer')
+@include('client.essential.footer')
 
 <!--FOOTER END-->
 <div class="footer-bottom">
