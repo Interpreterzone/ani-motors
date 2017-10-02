@@ -1,2 +1,2 @@
 @extends('client.master.index')
-@section('title') Home | Ani Motors @endsection
+@section('title') {{ __('app.title') }}  @endsection
