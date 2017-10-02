@@ -17,7 +17,12 @@ Route::get('/', function () {
 
 
 Route::get('/client/register', function () {
-    return view('client.register');
+    return view('client.pages.register');
+});
+
+
+Route::get('/client/login', function () {
+    return view('client.pages.login');
 });
 
 Route::get('/master', function () {
@@ -26,5 +31,9 @@ Route::get('/master', function () {
 
 
 Route::get('/admin', function () {
-    return view('crud.index');
+    return view('crud.pages.index');
+});
+
+Route::get('/admin/blank', function () {
+    return view('crud.pages.blank');
 });

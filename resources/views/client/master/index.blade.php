@@ -13,68 +13,22 @@
 </head>
 <body>
 
-<!--CUSTOM START-->
-<!-- custom section for adding -->
-
-@yield('custom')
-
-<!--CUSTOM END-->
-
 <!--HEADER START-->
 
 @include('client.essential.header')
 
 <!--HEADER END-->
 
-<!--BANNER START-->
-
-@include('client.essential.banner_top')
-
-<!--BANNER END-->
-
-<!--CTA1 START-->
-
-@include('client.essential.citation')
-
-
-<!--CTA1 END-->
-
-<!--SERVICE START-->
-
-@include('client.essential.service')
-
-
-<!--SERVICE END-->
-
-<!--PORTFOLIO START-->
-
-@include('client.essential.portfolio')
-
-<!--PORTFOLIO END-->
-
-<!--TEAM START-->
-
-@include('client.essential.team')
-
-<!--TEAM END-->
-
-<!--CTA2 START-->
-
-@include('client.essential.citation')
-
-<!--CTA2 END-->
-
-<!--CONTACT START-->
-
-@include('client.essential.contact')
-
-<!--CONTACT END-->
+<!--CUSTOM START-->
+@yield('custom')
+<!-- custom section for adding -->
 
 <!--FOOTER START-->
 
 @include('client.essential.footer')
 
 <!--FOOTER END-->
+
 <div class="footer-bottom">
     <div class="container">
         <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">

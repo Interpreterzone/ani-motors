@@ -56,9 +56,7 @@
     </section>
 
     <!-- content -->
-
-    @include('crud.essential.content')
-
+    @yield('content')
     <!-- ./content -->
 
     <!-- Jquery Core Js -->
