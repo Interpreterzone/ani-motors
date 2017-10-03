@@ -24,11 +24,6 @@
 
 
 <!--SERVICE END-->
-
-<!--PORTFOLIO START-->
-
-@include('client.essential.portfolio')
-
 <!--PORTFOLIO END-->
 
 <!--TEAM START-->
