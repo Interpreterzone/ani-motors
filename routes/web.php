@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Mail\Mailer;
+
+
 Route::get('/', function () {
     return view('client.index');
 });
@@ -36,4 +39,20 @@ Route::get('/admin', function () {
 
 Route::get('/admin/blank', function () {
     return view('crud.pages.blank');
+});
+
+
+Route::get('/send', function (){
+    $data = array('name'=>"Ani Motors");
+    // Path or name to the blade template to be rendered
+    $template_path = 'email.welcome';
+
+    Mail::send(['text'=> $template_path ], $data, function($message) {
+        // Set the receiver and subject of the mail.
+        $message->to('raoasifraz1@gmail.com', 'Customer')
+            ->subject('Pending registration')
+            ->from('2fsdevelopers@gmail.com','We care about you');
+    });
+
+    return "Successfully send";
 });
