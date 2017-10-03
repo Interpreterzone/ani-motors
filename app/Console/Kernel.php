@@ -14,7 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
-        Commands\setuplocally::class
+        Commands\setuplocally::class,
+        Commands\App::class
     ];
 
     /**
