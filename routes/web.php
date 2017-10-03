@@ -42,3 +42,10 @@ Route::get('/admin/blank', function () {
 
 
 Route::get('/send', 'MailController@registration_mail');
+
+Route::get('register/verify/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'RegistrationController@confirm'
+]);
+
+Route::get('register/new/user','RegistrationController@store');

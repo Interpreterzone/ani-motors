@@ -9,11 +9,11 @@
                 </div>
                 <div class="panel-body sign-up">
 
-                    <form class="new_client" id="new_client" action="/clients" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
+                    <form class="new_client" id="new_client" action="#" accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
                         <div class="row ">
                             <div class="col-sm-6 form-group">
                                 <input  class=" hidden " id="is-driver-radio" type="radio" value="car rental" checked="checked" name="client[sign_up_intention]">
-                                <label class="btn btn-primary  selected" >I want to rent</label>
+                                <label class="btn btn-primary  selected " >I want to rent</label>
                             </div>
                             <div class="col-sm-6  form-group">
                                 <input class=" hidden" id="is-owner-radio" type="radio" value="vehicle owner" name="client[sign_up_intention]">
@@ -38,37 +38,32 @@
                         <div class="row name-row">
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">
-                                    <label for="client_first_name">First Name</label>
-                                    <input autofocus="autofocus" required="required" class="form-control" id="first_name" type="text" name="client[first_name]">
+                                    <input autofocus="autofocus" placeholder="First Name" required="required" class="form-control text-field-box" id="first_name" type="text" name="client[first_name]">
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">
-                                    <label for="client_last_name">Last Name</label>
-                                    <input autofocus="autofocus" required="required" class="form-control" id="last_name" type="text" name="client[last_name]">
+                                    <input autofocus="autofocus" required="required"  placeholder="Last Name" class="form-control text-field-box" id="last_name" type="text" name="client[last_name]">
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group has-feedback">
-                            <label for="client_first_name">Phone</label>
-                            <input autofocus="autofocus" required="required" class="form-control" id="phone" type="text" name="client[phone]">
+                            <input autofocus="autofocus" required="required" placeholder="Phone" class="form-control text-field-box" id="phone" type="text" name="client[phone]">
                         </div>
 
                         <div class="form-group has-feedback">
-                            <label for="client_email">Email</label>
-                            <input autofocus="autofocus" required="required" class="form-control" id="email" type="email" value="" name="client[email]">
+                            <input autofocus="autofocus" required="required" placeholder="Email" class="form-control text-field-box" id="email" type="email" value="" name="client[email]">
                         </div>
 
                         <div class="form-group has-feedback">
-                            <label for="client_password">Password</label>
-                            <input autocomplete="off" required="required" class="form-control" id="password" pattern=".{8,}" oninvalid="setCustomValidity('Password must be at least 8 characters long')" onchange="try{setCustomValidity('')}catch(e){}" type="password" name="client[password]">
+                            <input autocomplete="off" required="required" placeholder="Password" class="form-control text-field-box" id="password" pattern=".{8,}" oninvalid="setCustomValidity('Password must be at least 8 characters long')" onchange="try{setCustomValidity('')}catch(e){}" type="password" name="client[password]">
                         </div>
 
                         <div class="form-group">
                             <label for="client_first_name">How did you hear about us?</label>
-                            <select required="required" class="form-control" name="client[how_did_you_hear_about_us]" id="client_how_did_you_hear_about_us"><option value="">Please select...</option>
+                            <select required="required" class="form-control text-field-box" name="client[how_did_you_hear_about_us]" id="client_how_did_you_hear_about_us"><option value="">Please select...</option>
                                 <option value="Radio">Radio</option>
                                 <option value="Uber Marketplace">Uber Marketplace</option>
                                 <option value="Facebook group">Facebook group</option>
@@ -80,8 +75,7 @@
                         </div>
 
                         <div class="form-group has-feedback">
-                            <label for="client_referred_by_code">Referral code</label>
-                            <input autocomplete="off" class="form-control" id="referral_code" type="text" name="client[referred_by_code]">
+                            <input autocomplete="off" class="form-control text-field-box" placeholder="Referral code" id="referral_code" type="text" name="client[referred_by_code]">
                         </div>
 
                         <div class="login-signup__bottom">
