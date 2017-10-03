@@ -12,7 +12,7 @@ class MailController extends Controller
         // Path or name to the blade template to be rendered
         $template_path = 'email.welcome';
 
-        \Mail::send(['text'=> $template_path ], $data, function($message) {
+        \Mail::send(['html'=> $template_path ], $data, function($message) {
             // Set the receiver and subject of the mail.
             $message->to('raoasifraz1@gmail.com', 'Customer')
                 ->subject('Pending registration')
