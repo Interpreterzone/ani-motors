@@ -11,11 +11,34 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('client.index');
 });
 
 
 Route::get('/client/register', function () {
-    return view('client.register');
+    return view('client.pages.register');
 });
+
+
+Route::get('/client/login', function () {
+    return view('client.pages.login');
+});
+
+Route::get('/master', function () {
+    return view('master.index');
+});
+
+
+Route::get('/admin', function () {
+    return view('crud.pages.index');
+});
+
+Route::get('/admin/blank', function () {
+    return view('crud.pages.blank');
+});
+
+
+Route::get('/send', 'MailController@registration_mail');

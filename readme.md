@@ -1,5 +1,5 @@
 
-[![Snap CI branch](https://img.shields.io/snap-ci/ThoughtWorksStudios/eb_deployer/master.svg)]() [![Scrutinizer](https://img.shields.io/scrutinizer/g/filp/whoops.svg)]()
+[![Build Status](https://travis-ci.org/fsdevelopers/ani-motors.svg?branch=master)](https://travis-ci.org/fsdevelopers/ani-motors)
 
 
 # Ani Motors
@@ -26,13 +26,13 @@ It is often helpful to have different configuration values based on the environm
 
 ## Easier Way, Configure in one command!!!
 
-## Note:(Make sure on windows Run this from <a href="https://git-for-windows.github.io/">git bash</a>)
-
 Just run the following command after cloning the repo.
 
     bash -x iamlazy.sh
+    
+Make sure on windows Run this from [git bash](https://git-for-windows.github.io/git)
 
-Note: You must have already installed bash/gitbash in you OS.
+Note: You must have already installed [bash](#) or [Gitbash](#) in you OS.
 
 ## Step by step
 
