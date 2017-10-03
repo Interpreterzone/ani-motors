@@ -27,6 +27,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+
                     <div class="team-info">
                         <div class="img-sec">
                             <img src="{{ URL::asset('client/img/agent2.jpg') }}" class="img-responsive">

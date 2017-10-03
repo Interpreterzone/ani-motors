@@ -7,13 +7,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Ani Motors</a>
+                <a class="navbar-brand" href="{{ URL::to('/') }}">Ani Motors</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#banner">Home</a></li>
                     <li><a href="#service">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">Our Team</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                     <li><a class="btn btn-success" href="{{ URL::to('/client/register') }}">Singup</a></li>

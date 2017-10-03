@@ -22,7 +22,7 @@ return [
 
     'banner_title' => "Ani Motors",
     'banner_sub_title' => 'MULTIPURPOSE HTML5 BOOTSTRAP TEMPLATE.',
-    'banner_button' => 'Learn More',
+    'banner_button' => 'SignIn',
 
 
     /*
