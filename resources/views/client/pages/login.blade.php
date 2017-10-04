@@ -6,7 +6,7 @@
             <div class="col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                 <div class="login-signup__top center">
                     <h2 class="center"  style="margin-left: auto">Log in</h2>
-                    <p class="" style="margin-bottom: 20px">Complete the form below to log into your Drover account</p>
+                    <p class="" style="margin-bottom: 20px">Complete the form below to log into your ANI MOTORS account</p>
                 </div>
 
                 <div class="">
