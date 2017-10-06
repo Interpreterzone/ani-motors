@@ -1,6 +1,13 @@
 language: php
-php:
-  - 7.0
-  - 7.1
 
-script: phpunit --configuration phpunit.xml
+sudo: false
+
+php:
+  - 5.6
+  - 7.0
+  - 7.0snapshot
+  - 7.1
+  - 7.1snapshot
+  - 7.2
+  - 7.2snapshot
+  - master
