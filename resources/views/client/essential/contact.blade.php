@@ -10,7 +10,7 @@
             <div id="errormessage"></div>
 
             <div class="form-sec">
-                <form action="" method="post" role="form" class="contactForm">
+                <form action="#" method="#" role="form" class="contactForm">
                     <div class="col-md-4 form-group">
                         <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         <div class="validation"></div>

@@ -14,8 +14,8 @@
 
                         </div>
                         <div class="fig-caption">
-                            <h3>Haris Brown</h3>
-                            <p class="marb-20">Sr. UI Designer</p>
+                            <h3>{{ __('app.member_one_name') }}</h3>
+                            <p class="marb-20">{{ __('app.member_one_status') }}</p>
                             <p>Follow me:</p>
                             <ul class="team-social">
                                 <li class="bgblue-dark"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -33,44 +33,8 @@
                             <img src="{{ URL::asset('client/img/agent2.jpg') }}" class="img-responsive">
                         </div>
                         <div class="fig-caption">
-                            <h3>Emmy Brown</h3>
-                            <p class="marb-20">Jr. UI Designer</p>
-                            <p>Follow me:</p>
-                            <ul class="team-social">
-                                <li class="blue-dark"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="red"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="blue-light"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="blue-dark"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="team-info">
-                        <div class="img-sec">
-                            <img src="{{ URL::asset('client/img/agent3.jpg') }}" class="img-responsive">
-                        </div>
-                        <div class="fig-caption">
-                            <h3>Iain Dante</h3>
-                            <p class="marb-20">Jr. UI Designer</p>
-                            <p>Follow me:</p>
-                            <ul class="team-social">
-                                <li class="blue-dark"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="red"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="blue-light"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="blue-dark"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="team-info">
-                        <div class="img-sec">
-                            <img src="{{ URL::asset('client/img/agent4.jpg') }}" class="img-responsive">
-                        </div>
-                        <div class="fig-caption">
-                            <h3>Kate Haris</h3>
-                            <p class="marb-20">Jr. UI Designer</p>
+                            <h3>{{ __('app.member_two') }}</h3>
+                            <p class="marb-20">{{ __('app.member_two_status') }}</p>
                             <p>Follow me:</p>
                             <ul class="team-social">
                                 <li class="blue-dark"><a href="#"><i class="fa fa-facebook"></i></a></li>
