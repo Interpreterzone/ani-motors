@@ -41,7 +41,7 @@
                         Licensing information: https://bootstrapmade.com/license/
                         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Ani Motors
                     -->
-                    Designed by <a href="https://bootstrapmade.com/">Bootstrap Themes</a>
+                    Designed by <a href="#">FS-Developers</a>
                 </div>
             </div>
         </div>

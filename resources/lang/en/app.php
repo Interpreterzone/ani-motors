@@ -21,7 +21,7 @@ return [
      */
 
     'banner_title' => "Ani Motors",
-    'banner_sub_title' => 'MULTIPURPOSE HTML5 BOOTSTRAP TEMPLATE.',
+    'banner_sub_title' => 'Ani Motors',
     'banner_button' => 'SignIn',
 
 
@@ -29,19 +29,19 @@ return [
      * Citation
      */
 
-    'citation_title' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'citation_sub_title' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'citation_title' => 'WELCOME TO ANI MOTORS.',
+    'citation_sub_title' => 'ANI MOTORS',
 
     /*
      * Services
      */
 
-    'service_title' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'service_content' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'service_section_one' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'service_section_two' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'service_section_third' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+    'service_title' => 'Our Servises.',
+    'service_content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Ani Motorsr incididunt ut labore et dolore magna aliqua.',
+    'service_section_one_content' => 'i am one',
+    'service_section_one_title' => 'one',
+    'service_section_two_content' => 'i am two',
+    'service_section_two_title' => 'two',
     /*
      * Portfolio
      */
@@ -55,17 +55,17 @@ return [
 
     'team_title' => 'Too many login attempts. Please try again in :seconds seconds.',
     'team_content' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'member_one' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'member_two' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'member_three' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+    'member_one_name' => 'Umer',
+    'member_one_status' => 'Dir',
+    'member_two' => 'khan',
+    'member_two_status' => '...',
 
     /*
      * Contact
      */
 
-    'contact_title' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'contact_content' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'contact_title' => 'WELCOME TO ANI MOTORS.',
+    'contact_content' => 'ANI MOTORS',
 
 
     /*

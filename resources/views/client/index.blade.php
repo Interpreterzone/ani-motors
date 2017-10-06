@@ -24,20 +24,12 @@
 
 
 <!--SERVICE END-->
-<!--PORTFOLIO END-->
 
 <!--TEAM START-->
 
 @include('client.essential.team')
 
 <!--TEAM END-->
-
-<!--CTA2 START-->
-
-@include('client.essential.citation')
-
-<!--CTA2 END-->
-
 <!--CONTACT START-->
 
 @include('client.essential.contact')
