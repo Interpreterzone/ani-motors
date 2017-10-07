@@ -4,8 +4,7 @@
         <div class="row">
             <div class="login-signup col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                 <div class="login-signup__top no-margin">
-                    <h2 class="login-signup__heading">Sign up to create your Ani
-                        Motors                  account</h2>
+                    <h2 class="login-signup__heading">Create your Ani Motors account</h2>
                 </div>
                 <div class="panel-body sign-up">
 
