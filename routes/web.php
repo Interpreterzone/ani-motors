@@ -47,7 +47,7 @@ Route::get('register/verify/{confirmationCode}', [
     'uses' => 'RegistrationController@confirm'
 ]);
 
-Route::get('register/new/user','RegistrationController@store');
+Route::POST('register','RegistrationController@store');
 
 
 Route::get('/db', function (){
