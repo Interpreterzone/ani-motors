@@ -7,8 +7,14 @@
                     <h2 class="login-signup__heading">Create your Ani Motors account</h2>
                 </div>
                 <div class="panel-body sign-up">
+<<<<<<< HEAD
                     <form class="new_client" id="new_client"  action="{{ url('register') }}" method="POST"  accept-charset="UTF-8" >
                         {{ csrf_field() }}
+=======
+                    <form action="{{ url('client/signup') }}" method="POST">
+                  <!-- <form class="new_client" id="new_client"  action="{{ url('client/signup') }}" method="POST"  accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
+                      -->
+>>>>>>> 5d666de9e6b5d88e22091f741f0610504a6bd29e
                         <div class="row name-row">
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">
