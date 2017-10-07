@@ -48,3 +48,14 @@ Route::get('register/verify/{confirmationCode}', [
 ]);
 
 Route::get('register/new/user','RegistrationController@store');
+
+
+Route::get('/db', function (){
+        // Make call to application...
+    try {
+        DB::connection()->getPdo();
+        echo '<center><b>Database connection sussfully connected!</b></center>';
+    } catch (\Exception $e) {
+        die("Could not connect to the database.  Please check your configuration.");
+    }
+});
