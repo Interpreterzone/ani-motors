@@ -10,6 +10,46 @@ use Illuminate\Support\Facades\Redirect;
 
 class RegistrationController extends Controller
 {
+
+
+    /**
+     * Display the specified resource.
+     *
+     *
+     *@return Response
+     */
+    public function validateUser(Request $request)
+    {
+    $email=$request->input('email');
+    $password=$request->input('password');
+    $data = User::all()->where('email','=',$email);
+        //$this->student=Student::all()->where('user_id','=',$user)->first();
+        if ($data->isEmpty()) {
+            return redirect('/client/login');
+        }
+        else{
+
+            foreach ($data as $user) {
+                if ($user->password == $password) {
+                    return redirect('/admin');
+                }
+                else
+                    return redirect('/client/login');
+
+            }
+
+
+        }
+  // return    response()->json($data);
+
+   // var_dump($email);
+
+    //die();
+
+
+    }
+
+
     /**
      * Register new user
      *
@@ -17,7 +57,6 @@ class RegistrationController extends Controller
      */
     public function store(Request $request)
     {
-
         /**
          * random hash string
          */
