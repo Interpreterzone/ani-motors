@@ -7,33 +7,7 @@
                     <h2 class="login-signup__heading">Create your Ani Motors account</h2>
                 </div>
                 <div class="panel-body sign-up">
-
-                    <form class="new_client" id="new_client" action="#" accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
-                        <div class="row ">
-                            <div class="col-sm-6 form-group">
-                                <input  class=" hidden " id="is-driver-radio" type="radio" value="car rental" checked="checked" name="client[sign_up_intention]">
-                                <label class="btn btn-primary  selected " >I want to rent</label>
-                            </div>
-                            <div class="col-sm-6  form-group">
-                                <input class=" hidden" id="is-owner-radio" type="radio" value="vehicle owner" name="client[sign_up_intention]">
-                                <label class="btn btn-white" for="client_sign_up_intention">I am a fleet owner</label>
-                            </div>
-                            <div class="col-sm-3"></div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12 form-group rent-car-options radio">
-                                <div class="radio">
-                                    <input  type="radio" value="car rental" checked="checked" name="client[sign_up_intention]" id="client_sign_up_intention_car_rental">
-                                    <label for="client_sign_up_intention">I want to rent a PCO vehicle</label>
-                                </div>
-                                <div class="radio">
-                                    <input  type="radio" value="van rental as individual" name="client[sign_up_intention]" id="client_sign_up_intention_van_rental_as_individual">
-                                    <label for="client_sign_up_intention">I want to rent a van</label>
-                                </div>
-                            </div>
-                        </div>
-
+                    <form class="new_client" id="new_client"  action="{{ url('client/signup') }}" method="POST"  accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
                         <div class="row name-row">
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">

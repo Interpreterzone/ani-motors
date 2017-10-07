@@ -6,7 +6,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Ani Motorsr <br>incididunt ut labore et dolore magna aliqua. </p>
                 <hr class="pg-titl-bdr-btm"></hr>
             </div>
-            <div class="autoplay">
+            <div class="">
                 <div class="col-md-6">
                     <div class="team-info">
                         <div class="img-sec">
