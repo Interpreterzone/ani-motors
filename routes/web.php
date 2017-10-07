@@ -11,8 +11,8 @@
 |
 */
 
-//signup
-Route::post('/client/signup', 'SignupDataController@store');
+//Login
+Route::POST('validateUser','RegistrationController@validateUser');
 
 Route::get('/', function () {
     return view('client.index');
@@ -35,11 +35,6 @@ Route::get('/admin', function () {
     return view('crud.pages.index');
 });
 
-Route::get('/admin/blank', function () {
-    return view('crud.pages.blank');
-});
-
-
 Route::get('/send', 'MailController@registration_mail');
 
 Route::get('register/verify/{confirmationCode}', [
@@ -50,8 +45,7 @@ Route::get('register/verify/{confirmationCode}', [
 
 Route::POST('register','RegistrationController@store');
 
-//Login
-Route::POST('validateUser','RegistrationController@validateUser');
+
 
 
 Route::get('/db', function (){

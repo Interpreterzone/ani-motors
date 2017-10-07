@@ -16,36 +16,24 @@ class RegistrationController extends Controller
      * Display the specified resource.
      *
      *
-     *@return Response
+     * @return Response
      */
     public function validateUser(Request $request)
     {
-    $email=$request->input('email');
-    $password=$request->input('password');
-    $data = User::all()->where('email','=',$email);
-        //$this->student=Student::all()->where('user_id','=',$user)->first();
+        $email = $request->input('email');
+        $password = $request->input('password');
+        $data = User::all()->where('email', '=', $email);
         if ($data->isEmpty()) {
             return redirect('/client/login');
-        }
-        else{
+        } else {
 
             foreach ($data as $user) {
                 if ($user->password == $password) {
                     return redirect('/admin');
-                }
-                else
+                } else
                     return redirect('/client/login');
-
             }
-
-
         }
-  // return    response()->json($data);
-
-   // var_dump($email);
-
-    //die();
-
 
     }
 
@@ -62,31 +50,31 @@ class RegistrationController extends Controller
          */
         $confirmation_code = str_random(30);
 
-        $data = array('confirmation_code'=> $confirmation_code);
-        $new_user= new User();
-             $new_user->user_name=' ';
-            $new_user->first_name=$request->input('first_name');
-            $new_user->last_name=$request->input('last_name');
-            $new_user->phone_number=$request->input('phone');
-            $new_user->email=$request->input('email');
-            $new_user->password=$request->input('password');
-            $new_user->user_engaged_from='null';
-            $new_user->referral_code='null';
-            $new_user->confirmed=0;
-            $new_user->confirmation_code=$confirmation_code;
-            $new_user->remember_token=$confirmation_code;
-            $new_user->save();
+        $data = array('confirmation_code' => $confirmation_code);
+        $new_user = new User();
+        $new_user->user_name = ' ';
+        $new_user->first_name = $request->input('first_name');
+        $new_user->last_name = $request->input('last_name');
+        $new_user->phone_number = $request->input('phone');
+        $new_user->email = $request->input('email');
+        $new_user->password = $request->input('password');
+        $new_user->user_engaged_from = 'null';
+        $new_user->referral_code = 'null';
+        $new_user->confirmed = 0;
+        $new_user->confirmation_code = $confirmation_code;
+        $new_user->remember_token = $confirmation_code;
+        $new_user->save();
 
         /**
          * sending email
          */
-       /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
-            $message->to($new_user->email, 'raoasifraza')
-                ->subject('Verify your email address')
-                ->from(__('config.send_from'));
-        });*/
+        /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
+             $message->to($new_user->email, 'raoasifraza')
+                 ->subject('Verify your email address')
+                 ->from(__('config.send_from'));
+         });*/
 
-        return  \redirect('/client/login');
+        return \redirect('/client/login');
     }
 
 
@@ -98,8 +86,7 @@ class RegistrationController extends Controller
      */
     public function confirm($confirmation_code)
     {
-        if( ! $confirmation_code)
-        {
+        if (!$confirmation_code) {
             throw new InvalidConfirmationCodeException;
         }
 
@@ -109,11 +96,10 @@ class RegistrationController extends Controller
         $user = DB::table('users')
             ->where('confirmation_code', $confirmation_code)
             ->update(
-            ['confirmed' => 1, 'confirmation_code' => '']
-        );;
+                ['confirmed' => 1, 'confirmation_code' => '']
+            );;
 
-        if ( ! $user)
-        {
+        if (!$user) {
             throw new InvalidConfirmationCodeException;
         }
 
