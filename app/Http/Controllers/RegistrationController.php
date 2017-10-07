@@ -25,7 +25,7 @@ class RegistrationController extends Controller
 
         $data = array('confirmation_code'=> $confirmation_code);
         $newuser= new User();
-             $newuser->user_name=' ';
+            $newuser->user_name=' ';
             $newuser->first_name=$request->input('first_name');
             $newuser->last_name=$request->input('last_name');
             $newuser->phone_number=$request->input('phone');
