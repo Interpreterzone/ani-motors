@@ -11,17 +11,16 @@
 |
 */
 
-
+//signup
+Route::post('/client/signup', 'SignupDataController@store');
 
 Route::get('/', function () {
     return view('client.index');
 });
 
-
 Route::get('/client/register', function () {
     return view('client.pages.register');
 });
-
 
 Route::get('/client/login', function () {
     return view('client.pages.login');
