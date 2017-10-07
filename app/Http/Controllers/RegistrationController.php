@@ -24,25 +24,26 @@ class RegistrationController extends Controller
         $confirmation_code = str_random(30);
 
         $data = array('confirmation_code'=> $confirmation_code);
-        $newuser= new User();
-            $newuser->user_name=' ';
-            $newuser->first_name=$request->input('first_name');
-            $newuser->last_name=$request->input('last_name');
-            $newuser->phone_number=$request->input('phone');
-            $newuser->email=$request->input('email');
-            $newuser->password=$request->input('password');
-            $newuser->user_engaged_from='null';
-            $newuser->referral_code='null';
-            $newuser->confirmed=0;
-            $newuser->confirmation_code=$confirmation_code;
-            $newuser->remember_token=$confirmation_code;
-            $newuser->save();
+
+        $new_user= new User();
+             $new_user->user_name=' ';
+            $new_user->first_name=$request->input('first_name');
+            $new_user->last_name=$request->input('last_name');
+            $new_user->phone_number=$request->input('phone');
+            $new_user->email=$request->input('email');
+            $new_user->password=$request->input('password');
+            $new_user->user_engaged_from='null';
+            $new_user->referral_code='null';
+            $new_user->confirmed=0;
+            $new_user->confirmation_code=$confirmation_code;
+            $new_user->remember_token=$confirmation_code;
+            $new_user->save();
 
         /**
          * sending email
          */
        /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
-            $message->to($newuser->email, 'raoasifraza')
+            $message->to($new_user->email, 'raoasifraza')
                 ->subject('Verify your email address')
                 ->from(__('config.send_from'));
         });*/

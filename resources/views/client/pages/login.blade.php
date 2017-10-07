@@ -12,11 +12,11 @@
                 <div class="">
                     <form class="new_client" id="new_client" action="#" accept-charset="UTF-8" method="#"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="QsjMNcpf5h77KTRa840V4OHxXD6JGErmKczlSvkHWc6ksSa02Wwrm4kW6RyCU5gfepaDV2oTRGakKW3TWpsmoA==">
                         <div class="form-group ">
-                            <input required="required" placeholder="Email" autofocus="autofocus" class="form-control text-field-box" type="email" value="" name="client[email]" id="client_email">
+                            <input required="required" placeholder="Email" autofocus="autofocus" class="form-control text-field-box" type="email" value="" name="email" id="client_email">
                         </div>
 
                         <div class="form-group">
-                            <input required="required" autocomplete="off" placeholder="Password" class="form-control text-field-box" type="password" name="client[password]" id="client_password">
+                            <input required="required" autocomplete="off" placeholder="Password" class="form-control text-field-box" type="password" name="password" id="client_password">
                         </div>
 
                         <div class=" row">
