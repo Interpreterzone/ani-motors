@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -23,36 +24,30 @@ class RegistrationController extends Controller
         $confirmation_code = str_random(30);
 
         $data = array('confirmation_code'=> $confirmation_code);
-
-        /**
-         * Register in db
-         */
-        DB::table('users')->insert(
-            [
-                'user_name' => '',
-                'first_name' => $request->input('client[first_name]'),
-                'last_name' => $request->input('client[last_name]'),
-                'phone_number' => $request->input('client[phone]'),
-                'email' => $request->input('client[email]'),
-                'password' => $request->input('client[password]'),
-                'user_engaged_from' => 'null',
-                'referral_code' => 'null',
-                'confirmed' => 0,
-                'confirmation_code' => $confirmation_code,
-                'remember_token' => $confirmation_code,
-            ]
-        );
+        $newuser= new User();
+             $newuser->user_name=' ';
+            $newuser->first_name=$request->input('first_name');
+            $newuser->last_name=$request->input('last_name');
+            $newuser->phone_number=$request->input('phone');
+            $newuser->email=$request->input('email');
+            $newuser->password=$request->input('password');
+            $newuser->user_engaged_from='null';
+            $newuser->referral_code='null';
+            $newuser->confirmed=0;
+            $newuser->confirmation_code=$confirmation_code;
+            $newuser->remember_token=$confirmation_code;
+            $newuser->save();
 
         /**
          * sending email
          */
-        //\Mail::send(['html' => 'email.verify'], $data, function($message) {
-        //    $message->to('raoasifraz1@gmail.com', 'raoasifraza')
-        //        ->subject('Verify your email address')
-        //        ->from(__('config.send_from'));
-        //});
+       /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
+            $message->to($newuser->email, 'raoasifraza')
+                ->subject('Verify your email address')
+                ->from(__('config.send_from'));
+        });*/
 
-        return redirect('/');
+        return  \redirect('/client/login');
     }
 
 
