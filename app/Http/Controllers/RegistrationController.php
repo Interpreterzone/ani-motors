@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
@@ -13,7 +14,7 @@ class RegistrationController extends Controller
      *
      * @return Redirect to home
      */
-    public function store()
+    public function store(Request $request)
     {
 
         /**
@@ -28,21 +29,28 @@ class RegistrationController extends Controller
          */
         DB::table('users')->insert(
             [
-                'username' => 'raoasifraza',
-                'email' => 'raoasifraz1@gmail.com',
-                'password' => Hash::make('123456'),
-                'confirmation_code' => $confirmation_code
+                'user_name' => '',
+                'first_name' => $request->input('client[first_name]'),
+                'last_name' => $request->input('client[last_name]'),
+                'phone_number' => $request->input('client[phone]'),
+                'email' => $request->input('client[email]'),
+                'password' => $request->input('client[password]'),
+                'user_engaged_from' => 'null',
+                'referral_code' => 'null',
+                'confirmed' => 0,
+                'confirmation_code' => $confirmation_code,
+                'remember_token' => $confirmation_code,
             ]
         );
 
         /**
          * sending email
          */
-        \Mail::send(['html' => 'email.verify'], $data, function($message) {
-            $message->to('raoasifraz1@gmail.com', 'raoasifraza')
-                ->subject('Verify your email address')
-                ->from(__('config.send_from'));
-        });
+        //\Mail::send(['html' => 'email.verify'], $data, function($message) {
+        //    $message->to('raoasifraz1@gmail.com', 'raoasifraza')
+        //        ->subject('Verify your email address')
+        //        ->from(__('config.send_from'));
+        //});
 
         return redirect('/');
     }
