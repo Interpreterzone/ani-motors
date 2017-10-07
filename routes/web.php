@@ -59,3 +59,10 @@ Route::get('/db', function (){
         die("Could not connect to the database.  Please check your configuration.");
     }
 });
+
+Route::get('/testing', function (){
+
+
+
+    echo getenv('MAIL_DRIVER');
+});
