@@ -92,6 +92,7 @@ class App extends Command
 
             $this->call('config:clear');
             $this->call('cache:clear');
+            $this->call('key:generate');
             $this->call('migrate:install');
             $this->call('migrate:refresh');
             $this->call('migrate:status');
