@@ -50,22 +50,7 @@ class RegistrationController extends Controller
          */
         $confirmation_code = str_random(30);
 
-<<<<<<< HEAD
-        $data = array('confirmation_code' => $confirmation_code);
-        $new_user = new User();
-        $new_user->user_name = ' ';
-        $new_user->first_name = $request->input('first_name');
-        $new_user->last_name = $request->input('last_name');
-        $new_user->phone_number = $request->input('phone');
-        $new_user->email = $request->input('email');
-        $new_user->password = $request->input('password');
-        $new_user->user_engaged_from = 'null';
-        $new_user->referral_code = 'null';
-        $new_user->confirmed = 0;
-        $new_user->confirmation_code = $confirmation_code;
-        $new_user->remember_token = $confirmation_code;
-        $new_user->save();
-=======
+
         $data = array('confirmation_code'=> $confirmation_code);
 
         $new_user= new User();
@@ -81,7 +66,6 @@ class RegistrationController extends Controller
             $new_user->confirmation_code = $confirmation_code;
             $new_user->remember_token = $confirmation_code;
             $new_user->save();
->>>>>>> 05bd8f2e0d63b4a183741ad6b4699e53026eb463
 
         /**
          * sending email
