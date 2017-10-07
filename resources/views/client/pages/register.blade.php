@@ -8,7 +8,9 @@
                         Motors                  account</h2>
                 </div>
                 <div class="panel-body sign-up">
-                    <form class="new_client" id="new_client"  action="{{ url('client/signup') }}" method="POST"  accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
+                    <form action="{{ url('client/signup') }}" method="POST">
+                  <!-- <form class="new_client" id="new_client"  action="{{ url('client/signup') }}" method="POST"  accept-charset="UTF-8" ><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ozhXmXfuKx4oeVaJIwZcCk15BqKradWKprrgz8D063bq+dFfzYqH1adkHqxgMY+Gl8lkeQUfIW/OQTBfaEJfKA==">
+                      -->
                         <div class="row name-row">
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">

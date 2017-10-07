@@ -11,7 +11,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="{{ URL::to('/') }}">Home</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#about">Our Team</a></li>
                     <li><a href="#contact">Contact Us</a></li>
