@@ -33,24 +33,14 @@ fi
 if [ $OSI = "OSX" ]; then
     cp .env.example .env
     printf "Rename success\n"
-elif [ $OSI = "WINDOWS" ]; then
+else
+    printf "Renaming failed!\n"
+fi
+
+if [ $OSI = "WINDOWS" ]; then
     copy .env.example .env
     printf "Renaming success\n"
 else
     printf "Renaming failed!\n"
 fi
 
-
-# Key:genrate
-if php artisan key:generate; then
-    printf "Generated application key success\n"
-else
-    printf "Generating key failed\n"
-fi
-
-# auto-load
-if composer dump-autoload; then
-    printf "Dump-autoload success\n"
-else
-    printf "Dump-autoload failed\n"
-fi
