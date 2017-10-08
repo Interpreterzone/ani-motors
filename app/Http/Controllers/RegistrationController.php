@@ -16,36 +16,24 @@ class RegistrationController extends Controller
      * Display the specified resource.
      *
      *
-     *@return Response
+     * @return Response
      */
     public function validateUser(Request $request)
     {
-    $email=$request->input('email');
-    $password=$request->input('password');
-    $data = User::all()->where('email','=',$email);
-        //$this->student=Student::all()->where('user_id','=',$user)->first();
+        $email = $request->input('email');
+        $password = $request->input('password');
+        $data = User::all()->where('email', '=', $email);
         if ($data->isEmpty()) {
             return redirect('/client/login');
-        }
-        else{
+        } else {
 
             foreach ($data as $user) {
                 if ($user->password == $password) {
                     return redirect('/admin');
-                }
-                else
+                } else
                     return redirect('/client/login');
-
             }
-
-
         }
-  // return    response()->json($data);
-
-   // var_dump($email);
-
-    //die();
-
 
     }
 
@@ -61,6 +49,7 @@ class RegistrationController extends Controller
          * random hash string
          */
         $confirmation_code = str_random(30);
+
 
         $data = array('confirmation_code'=> $confirmation_code);
 
@@ -81,13 +70,13 @@ class RegistrationController extends Controller
         /**
          * sending email
          */
-       /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
-            $message->to($new_user->email, 'raoasifraza')
-                ->subject('Verify your email address')
-                ->from(__('config.send_from'));
-        });*/
+        /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
+             $message->to($new_user->email, 'raoasifraza')
+                 ->subject('Verify your email address')
+                 ->from(__('config.send_from'));
+         });*/
 
-        return  \redirect('/client/login');
+        return \redirect('/client/login');
     }
 
 
@@ -99,8 +88,7 @@ class RegistrationController extends Controller
      */
     public function confirm($confirmation_code)
     {
-        if( ! $confirmation_code)
-        {
+        if (!$confirmation_code) {
             throw new InvalidConfirmationCodeException;
         }
 
@@ -110,11 +98,10 @@ class RegistrationController extends Controller
         $user = DB::table('users')
             ->where('confirmation_code', $confirmation_code)
             ->update(
-            ['confirmed' => 1, 'confirmation_code' => '']
-        );;
+                ['confirmed' => 1, 'confirmation_code' => '']
+            );;
 
-        if ( ! $user)
-        {
+        if (!$user) {
             throw new InvalidConfirmationCodeException;
         }
 

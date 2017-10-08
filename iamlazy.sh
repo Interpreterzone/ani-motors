@@ -38,7 +38,7 @@ else
 fi
 
 if [ $OSI = "WINDOWS" ]; then
-    copy .env.example .env
+    cp .env.example .env
     printf "Renaming success\n"
 else
     printf "Renaming failed!\n"
