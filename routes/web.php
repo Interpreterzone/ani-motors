@@ -64,9 +64,6 @@ Route::get('/db', function (){
     }
 });
 
-Route::get('/testing', function (){
-
-
-
-    echo getenv('MAIL_DRIVER');
+Route::get('/admin/form', function (){
+    return view('crud.pages.form');
 });
