@@ -92,6 +92,21 @@ Route::get('/session', function(Request $request){
 });
 
 
+
+Route::get('/admin/hire_rates&charges', function (){
+    return view('crud.pages.hire_rates&charges');
+});
+
+Route::get('/admin/non_regulated', function (){
+    return view('crud.pages.non_regulated');
+});
+Route::get('/admin/hirer_details', function (){
+    return view('crud.pages.hirer_details');
+});
+Route::get('/admin/licence_details', function (){
+    return view('crud.pages.licence_details');
+});
+
 /*
 Route::POST('validateUser','RegistrationController@validateUser');
 
@@ -134,10 +149,6 @@ Route::get('/db', function (){
     } catch (\Exception $e) {
         die("Could not connect to the database.  Please check your configuration.");
     }
-});
-
-Route::get('/admin/form', function (){
-    return view('crud.pages.form');
 });
 
 */
