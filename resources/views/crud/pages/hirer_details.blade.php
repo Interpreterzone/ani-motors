@@ -4,7 +4,7 @@
 
         <div class="container-fluid">
             <div class="block-header">
-                <h2>ADVANCED FORM ELEMENTS</h2>
+                <h2>HIRE AGREEMENT</h2>
             </div>
 
             <!-- Input Group -->
@@ -13,12 +13,11 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                INPUT GROUP
+                                HIRER’S DETAILS
                             </h2>
 
                         </div>
                         <div class="body">
-                            <h2 class="card-inside-title">NON-REGULATED HIRE AGREEMENT</h2>
                             <div class="row clearfix">
                                 <div class="col-md-4">
                                     <div class="input-group">
@@ -26,14 +25,14 @@
                                             <i class="material-icons">person</i>
                                         </span>
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="1. VEHICLE REG. NO">
+                                            <input type="text" class="form-control date" placeholder="12. SURNAME">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="2. MAKE">
+                                            <input type="text" class="form-control date" placeholder="13. FIRST NAME">
                                         </div>
                                         <span class="input-group-addon">
                                             <i class="material-icons">send</i>
@@ -43,7 +42,7 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="3.MODEL">
+                                            <input type="text" class="form-control date" placeholder="14. PERMANENT ADDRESS">
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +56,7 @@
                                             <i class="material-icons">person</i>
                                         </span>
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="4. TOOLS">
+                                            <input type="text" class="form-control date" placeholder="15. CURRENT ADDRESS ">
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +64,7 @@
                                     <div class="input-group">
 
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="5. RADIO">
+                                            <input type="text" class="form-control date" placeholder="16. MOBILE NO">
                                         </div>
                                         <span class="input-group-addon">
                                             <i class="material-icons">send</i>
@@ -75,7 +74,7 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control date" placeholder="6.SPARES">
+                                            <input type="text" class="form-control date" placeholder="17. HOME TEL NO">
                                         </div>
                                     </div>
                                 </div>
@@ -83,58 +82,18 @@
 
 
                             <div class="row clearfix">
-                                <div class="col-md-4">
-                                    <div class="input-group input-group-lg">
-                                        <span class="input-group-addon">@</span>
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">person</i>
+                                        </span>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Recipient's username">
+                                            <input type="text" class="form-control date" placeholder="18. EMAIL ADDRESS">
                                         </div>
-                                        <span class="input-group-addon">@example.com</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="input-group input-group-sm">
-                                        <span class="input-group-addon">$</span>
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <span class="input-group-addon">.00</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <h2 class="card-inside-title">Radio &amp; Checkbox</h2>
-                            <div class="row clearfix">
-                                <div class="col-md-6">
-                                    <div class="input-group input-group-lg">
-                                        <span class="input-group-addon">
-                                            <input type="checkbox" class="filled-in" id="ig_checkbox">
-                                            <label for="ig_checkbox"></label>
-                                        </span>
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group input-group-lg">
-                                        <span class="input-group-addon">
-                                            <input type="radio" class="with-gap" id="ig_radio">
-                                            <label for="ig_radio"></label>
-                                        </span>
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

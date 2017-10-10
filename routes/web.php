@@ -58,6 +58,17 @@ Route::get('/db', function (){
     }
 });
 
-Route::get('/admin/form', function (){
-    return view('crud.pages.form');
+
+Route::get('/admin/hire_rates&charges', function (){
+    return view('crud.pages.hire_rates&charges');
+});
+
+Route::get('/admin/non_regulated', function (){
+    return view('crud.pages.non_regulated');
+});
+Route::get('/admin/hirer_details', function (){
+    return view('crud.pages.hirer_details');
+});
+Route::get('/admin/licence_details', function (){
+    return view('crud.pages.licence_details');
 });

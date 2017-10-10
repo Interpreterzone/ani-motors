@@ -32,93 +32,32 @@
                     <span>Home</span>
                 </a>
             </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">widgets</i>
-                    <span>Widgets</span>
-                </a>
-                <ul class="ml-menu">
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>Cards</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="#">Basic</a>
-                            </li>
-                            <li>
-                                <a href="#">Colored</a>
-                            </li>
-                            <li>
-                                <a href="#">No Header</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>Infobox</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="#">Infobox-1</a>
-                            </li>
-                            <li>
-                                <a href="#">Infobox-2</a>
-                            </li>
-                            <li>
-                                <a href="#">Infobox-3</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-
-
-
-
-
 
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">trending_down</i>
-                    <span>Multi Level Menu</span>
+                    <span>HIRE AGREEMENT</span>
                 </a>
                 <ul class="ml-menu">
                     <li>
-                        <a href="javascript:void(0);">
-                            <span>Menu Item</span>
+                        <a href="{{ url('/admin/non_regulated') }}">
+                            <span>NON-REGULATED HIRE AGREEMENT</span>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);">
-                            <span>Menu Item - 2</span>
+                        <a href="{{ url('/admin/hirer_details') }}">
+                            <span>HIRER’S DETAILS</span>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>Level - 2</span>
+                        <a href="{{ url('/admin/licence_details') }}" >
+                            <span>DRIVING LICENCE DETAILS</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <span>Menu Item</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Level - 3</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <span>Level - 4</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    </li>
+                    <li>
+                        <a href="{{ url('/admin/hire_rates&charges') }}" >
+                            <span>VEHICLE HIRE RATES AND CHARGES</span>
+                        </a>
                     </li>
                 </ul>
             </li>
