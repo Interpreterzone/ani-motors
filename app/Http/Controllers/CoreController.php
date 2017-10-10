@@ -6,6 +6,20 @@ use Illuminate\Http\Request;
 
 class CoreController extends Controller
 {
+    /**
+     * Send new email
+     *
+     * @param string $type
+     *
+     * @param string $template
+     *
+     * @param array $data_array
+     *
+     * @param $to
+     *
+     * @param $subject
+     */
+
     public static function sendMail($type = 'html', $template = 'email.welcome', $data_array = array('name'=>"Ani Motors"), $to, $subject){
 
         \Mail::send([$type => $template ], $data_array, function($message) use (&$to, &$subject)  {
@@ -16,6 +30,15 @@ class CoreController extends Controller
         });
     }
 
+
+    /**
+     * Env file writing via command line
+     * @param $key
+     *
+     * @param $old
+     *
+     * @param $value
+     */
 
     public static function changeEnvVariable($key, $old, $value){
         $path = base_path('.env');

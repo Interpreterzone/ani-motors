@@ -15,7 +15,7 @@
                     <li><a href="#service">Service</a></li>
                     <li><a href="#about">Our Team</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li><a class="btn btn-success" href="{{ URL::to('/client/register') }}">Singup</a></li>
+                    <li><a class="btn btn-success" href="{{ __('credential.register') }}">Singup</a></li>
                 </ul>
             </div>
         </div>

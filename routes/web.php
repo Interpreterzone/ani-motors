@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,16 +14,91 @@
 |
 */
 
-//Login
+
+
+/*
+|--------------------------------------------------------------------------
+| Welcome Routes
+|--------------------------------------------------------------------------
+|
+| Here is front website related routes are define.
+|
+*/
+
+Route::get('/', function (){
+    return view('client.index');
+});
+
+
+
+/*
+|--------------------------------------------------------------------------
+| User Routes
+|--------------------------------------------------------------------------
+|
+| Here is user related routes are define.
+|
+*/
+
+/*
+ *  GET Requests
+ */
+
+Route::get('/register', 'RegistrationController@singup');
+Route::get('/login', 'RegistrationController@login');
+Route::get('/logout', 'LoginController@logout');
+Route::get('register/verify/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'RegistrationController@confirm'
+]);
+
+ /*
+  * POST Requests
+  */
+
+Route::post('/register', 'RegistrationController@store');
+Route::post('/login', 'LoginController@login');
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+| Here is user related routes are define.
+|
+*/
+
+Route::group(['middleware' => 'checkuser'], function (){
+    Route::get('/admin', function (){
+        return view('crud.index');
+    });
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| Test Routes
+|--------------------------------------------------------------------------
+|
+| Here is user related routes are define.
+|
+*/
+
+Route::get('/session', function(Request $request){
+    return response()->json($request->session()->get('user'));
+});
+
+
+/*
 Route::POST('validateUser','RegistrationController@validateUser');
 
 Route::get('/', function () {
     return view('client.index');
 });
 
-Route::get('/client/register', function () {
-    return view('client.pages.register');
-});
 
 Route::get('/client/login', function () {
     return view('client.pages.login');
@@ -61,3 +139,5 @@ Route::get('/db', function (){
 Route::get('/admin/form', function (){
     return view('crud.pages.form');
 });
+
+*/
