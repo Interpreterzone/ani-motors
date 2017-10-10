@@ -2,33 +2,42 @@
 @section('custom')
     <div class="container" style="margin-top: 100px">
         <div class="row">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="login-signup col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                 <div class="login-signup__top no-margin">
                     <h2 class="login-signup__heading">Create your Ani Motors account</h2>
                 </div>
                 <div class="panel-body sign-up">
-                    <form class="new_client" id="new_client"  action="{{ url('register') }}" method="POST"  accept-charset="UTF-8" >
+                    <form class="new_client" id="new_client"  action="{{ __('credential.register') }}" method="POST"  accept-charset="UTF-8" >
                         {{ csrf_field() }}
                         <div class="row name-row">
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">
-                                    <input autofocus="autofocus" placeholder="First Name" required="required" class="form-control text-field-box" id="first_name" type="text" name="first_name">
+                                    <input autofocus="autofocus" placeholder="First Name" value="{{ old('first_name') }}" required="required" class="form-control text-field-box" id="first_name" type="text" name="first_name">
                                    </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="form-group has-feedback">
-                                    <input autofocus="autofocus" required="required"  placeholder="Last Name" class="form-control text-field-box" id="last_name" type="text" name="last_name">
+                                    <input autofocus="autofocus" placeholder="Last Name" value="{{ old('last_name') }}" class="form-control text-field-box" id="last_name" type="text" name="last_name">
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group has-feedback">
-                            <input autofocus="autofocus" required="required" placeholder="Phone" class="form-control text-field-box" id="phone" type="text" name="phone">
+                            <input autofocus="autofocus" required="required" placeholder="Phone" class="form-control text-field-box" id="phone" type="text" name="phone" value="{{ old('phone') }}">
                         </div>
 
                         <div class="form-group has-feedback">
-                            <input autofocus="autofocus" required="required" placeholder="Email" class="form-control text-field-box" id="email" type="email" value="" name="email">
+                            <input autofocus="autofocus" required="required" placeholder="Email" value="{{ old('email') }}" class="form-control text-field-box" id="email" type="email" value="" name="email">
                         </div>
 
                         <div class="form-group has-feedback">

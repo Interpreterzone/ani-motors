@@ -3,10 +3,7 @@
 
 <!--CUSTOM END-->
 
-
-
 <!--BANNER START-->
-
 @include('client.essential.banner_top')
 
 <!--BANNER END-->

@@ -7,14 +7,39 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use Carbon\Carbon;
+use App\Http\Controllers\CoreController;
 
 class RegistrationController extends Controller
 {
+    /**
+     * Default function
+     */
 
+    public function index(){
+        return redirect('/');
+    }
+
+    /**
+     * Singup page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function singup(){
+        return view('client.pages.register');
+    }
+
+    /**
+     * Login page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function login(){
+        return view('client.pages.login');
+    }
 
     /**
      * Display the specified resource.
-     *
      *
      * @return Response
      */
@@ -45,38 +70,48 @@ class RegistrationController extends Controller
      */
     public function store(Request $request)
     {
+
+        /**
+         * validation rules
+         */
+        $this->validate(request(), [
+            'first_name' => 'filled',
+            'phone' => 'filled|digits:11',
+            'email' => 'email|unique:users,email',
+            'password' => 'filled|max:10|min:8',
+        ]);
+
         /**
          * random hash string
          */
         $confirmation_code = str_random(30);
 
+        $user = new User();
+        $user->email = $request->input('email');
+        $user->password = Hash::make($request->input('password'));
+        $user->permissions = null;
+        $user->activation_code = $confirmation_code;
+        $user->activated_at = Carbon::now()->toDateTimeString();
+        $user->last_login = Carbon::now()->toDateTimeString();
+        $user->persist_code = null;
+        $user->reset_password_code = null;
+        $user->first_name = $request->input('first_name');
+        $user->last_name = $request->input('last_name');
+        $user->phone = $request->input('phone');
+        $user->created_at = Carbon::now()->toDateTimeString();
+        $user->updated_at = Carbon::now()->toDateTimeString();
+        $user->save();
 
+
+
+        // TODO:: conformation email sending
         $data = array('confirmation_code'=> $confirmation_code);
 
-        $new_user= new User();
-             $new_user->user_name = ' ';
-            $new_user->first_name = $request->input('first_name');
-            $new_user->last_name = $request->input('last_name');
-            $new_user->phone_number = $request->input('phone');
-            $new_user->email = $request->input('email');
-            $new_user->password = $request->input('password');
-            $new_user->user_engaged_from = 'null';
-            $new_user->referral_code = 'null';
-            $new_user->confirmed = 0;
-            $new_user->confirmation_code = $confirmation_code;
-            $new_user->remember_token = $confirmation_code;
-            $new_user->save();
 
-        /**
-         * sending email
-         */
-        /* \Mail::send(['html' => 'email.verify'], $data, function($message) {
-             $message->to($new_user->email, 'raoasifraza')
-                 ->subject('Verify your email address')
-                 ->from(__('config.send_from'));
-         });*/
+        CoreController::sendMail($type = 'html', $template = 'email.verify', $data, $to
+            = $request->get('email'), $subject = 'Verify Eamil Address');
 
-        return \redirect('/client/login');
+        return redirect('/login')->with('alert-info', 'Verify your email address check inbox.');
     }
 
 
@@ -96,9 +131,9 @@ class RegistrationController extends Controller
          * update verify
          */
         $user = DB::table('users')
-            ->where('confirmation_code', $confirmation_code)
+            ->where('activation_code', $confirmation_code)
             ->update(
-                ['confirmed' => 1, 'confirmation_code' => '']
+                ['activated' => 1, 'activation_code' => null]
             );;
 
         if (!$user) {
