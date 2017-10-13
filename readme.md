@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/fsdevelopers/ani-motors.svg?branch=master)](https://travis-ci.org/fsdevelopers/ani-motors)
+[![Build Status](https://travis-ci.org/fsdevelopers/ani-motors.svg?branch=master)](https://travis-ci.org/fsdevelopers/ani-motors) <a href="https://snyk.io/test/github/interpreterzone/ani-motors"><img src="https://snyk.io/test/github/interpreterzone/ani-motors/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/interpreterzone/ani-motors" style="max-width:100%;"></a>
 
 
 # Ani Motors
