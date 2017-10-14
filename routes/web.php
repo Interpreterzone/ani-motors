@@ -106,7 +106,15 @@ Route::get('/admin/hirer_details', function (){
 Route::get('/admin/licence_details', function (){
     return view('crud.pages.licence_details');
 });
-
+Route::get('/admin/addnew', function (){
+    return view('crud.pages.add_new_vehical');
+});
+Route::get('/admin/vehicalsview', function (){
+    return view('crud.pages.allvehicals');
+});
+Route::get('/admin/viewclients', function (){
+    return view('crud.pages.allclients');
+});
 /*
 Route::POST('validateUser','RegistrationController@validateUser');
 
@@ -152,3 +160,14 @@ Route::get('/db', function (){
 });
 
 */
+
+
+Route::get('/db', function (){
+    // Make call to application...
+    try {
+        DB::connection()->getPdo();
+        echo '<center><b>Database connection sussfully connected!</b></center>';
+    } catch (\Exception $e) {
+        die("Could not connect to the database.  Please check your configuration.");
+    }
+});

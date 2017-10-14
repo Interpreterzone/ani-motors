@@ -5,10 +5,9 @@
                 <h3>Follow us on</h3>
                 <div class="footer_social">
                     <ul>
-                        <li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="f_facebook" href="https://www.facebook.com/ani.motor.39"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="f_twitter" href="https://twitter.com/ani_motor"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="f_google" href="https://plus.google.com/u/0/113953560469232930115"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
             </div><!--- END COL -->
