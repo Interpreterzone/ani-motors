@@ -139,7 +139,7 @@ Route::get('register/verify/{confirmationCode}', [
 Route::POST('register','RegistrationController@store');
 
 
-
+*/
 
 Route::get('/db', function (){
         // Make call to application...
@@ -151,4 +151,3 @@ Route::get('/db', function (){
     }
 });
 
-*/
