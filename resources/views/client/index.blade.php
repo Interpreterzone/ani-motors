@@ -22,6 +22,13 @@
 
 <!--SERVICE END-->
 
+<!--SERVICE START-->
+
+@include('client.essential.car_rental')
+
+
+<!--SERVICE END-->
+
 <!--TEAM START-->
 
 @include('client.essential.team')

@@ -1,8 +1,8 @@
 @extends('client.master.index')
 @section('custom')
 
-
-    <div class="container" style="margin-top: 100px">
+    <section class="content">
+    <div class="container" >
         <div class="row">
             <!-- Notification -->
             @if(session('alert-info'))
@@ -70,6 +70,6 @@
             </div>
         </div>
     </div>
-
+    </section>
 
 @endsection

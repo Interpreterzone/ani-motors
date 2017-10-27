@@ -61,7 +61,37 @@
                     </li>
                 </ul>
             </li>
-
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">trending_down</i>
+                    <span>Vehical </span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{ url('/admin/addnew') }}">
+                            <span>Add New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/admin/vehicalsview') }}" >
+                            <span>All Vehical's</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">trending_down</i>
+                    <span>Manage Client's </span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{ url('/admin/vehicalsview') }}" >
+                            <span>All User's</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
         </ul>
     </div>
